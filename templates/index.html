@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form builder</title>
+
+     <!-- css and bootstrap -->
+     <link href="../bootstrap-5.3.1-dist/css/bootstrap.css" rel="stylesheet">
+     <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-success mb-5 mt-3">FORM BUILDER</h1>
+        <div class="row justify-content-center">
+            <div class="col-6 pe-5 ps-5">
+                <!--Select options  -->
+                <select class="form-select bg-dark text-light" id="selectform">
+                    <option value="">Select a field</option>
+                    <option value="textbox">Textbox</option>
+                    <option value="textarea">Textarea</option>
+                    <option value="email">Email</option>
+                    <option value="password">Password</option>
+                    <option value="number">Number</option>
+                    <option value="radio">Radio</option>
+                    <option value="checkbox">Checkbox</option>
+                    <option value="select">Select</option>
+                    <option value="button">Button</option>
+                </select>
+            </div>
+            <!-- next button -->
+            <div class="col-3">
+                <button type="button" class="btn btn-success" id="next">Next</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center pt-5">
+            <div class="col-3">
+                <!-- show form btn -->
+            <button type="button" class="btn btn-warning" id="showform">Show form</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="row">
+        <!-- formfields -->
+        <div class="col-6 formfields" id="formfields"></div>
+        <!-- json format  -->
+        <pre class="col-4 format" id="format"></pre>
+    </div>
+    <!-- output formfields  -->
+    <div class="col showformfields mt-5" id="showformfields"></div>
+
+  </div>
+    <script src="../javascript/jquery-3.7.0.min.js"></script><!--jquery script -->
+    <script src="../javascript/script.js"></script>  <!-- script -->  
+</body>
+</html>
+
